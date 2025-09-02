@@ -36,7 +36,11 @@ export default function Welcome() {
               <p className="font-vt323 text-pink-accent text-2xl">My personal knowledge library: notes, ideas, lessons, and reflections from all parts of life.</p>
               <br />
               <Link className="font-vt323 text-pink-accent text-2xl underline underline-offset-2" href={`/blog/${posts[0].slug}`}>
-                {`>>`} latest
+                {`>>`} latest-blog
+              </Link>
+              <br/>
+              <Link className="font-vt323 text-pink-accent text-2xl underline underline-offset-2" href="/experience-projects">
+                {`>>`} experiences-and-projects
               </Link>
             </div>
           </div>

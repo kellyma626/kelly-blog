@@ -56,7 +56,7 @@ export default function BlogPage({ params }: { params: Promise<{ slug: string }>
                     </button>
                 </div>
                 <div className="space-y-2">
-                    <p className="text-4xl text-hot-pink font-bold">{post.title}</p>
+                    <p className="text-4xl font-bold">{post.title}</p>
                     <p className="text-sm text-gray-400">Last updated: {post.date}</p>
                 </div>
                 <div className="space-y-4 text-md leading-relaxed">
