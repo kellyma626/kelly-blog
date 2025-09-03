@@ -60,9 +60,30 @@ export default function BlogPage({ params }: { params: Promise<{ slug: string }>
                     <p className="text-sm text-gray-400">Last updated: {post.date}</p>
                 </div>
                 <div className="space-y-4 text-md leading-relaxed">
-                    {post.content.map((paragraph, idx) => (
-                    <p key={idx}>{paragraph}</p>
-                    ))}
+                  {post.content.map((block, idx) => {
+                    if (block.type === "heading" && "text" in block) {
+                      return <p key={idx} className="font-bold text-xl">{block.text}</p>;
+                    }
+
+                    if (block.type === "list" && "items" in block && Array.isArray(block.items)) {
+                      return (
+                        <ul key={idx} className="list-disc ml-6 space-y-2">
+                          {block.items.map((item, i) => (
+                            <li key={i}>
+                              {item.highlight ? <span className="text-pink-accent font-semibold">{item.text}</span> : item.text}
+                              {item.desc && `: ${item.desc}`}
+                            </li>
+                          ))}
+                        </ul>
+                      );
+                    }
+
+                    if (block.type === "paragraph" && "text" in block) {
+                      return <p key={idx}>{block.text}</p>;
+                    }
+
+                    return null;
+                  })}
                 </div>
             </div>
           <Blinkies />
