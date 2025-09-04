@@ -14,7 +14,7 @@ export default function BlogPage({ params }: { params: Promise<{ slug: string }>
 
   if (!post) {
     return (
-    <div className="bg-pink-100 min-h-screen flex justify-center py-10">
+    <div className="bg-sage min-h-screen flex justify-center py-10">
       <div className="bg-white w-full max-w-5xl p-8 rounded-lg shadow-md flex flex-col space-y-1">
         <Gingham />
         <div className="space-y-5">
@@ -29,7 +29,7 @@ export default function BlogPage({ params }: { params: Promise<{ slug: string }>
                             back {`>>`}
                         </button>
                     </div>
-                    <p className="flex justify-center font-nunito text-4xl text-pink-500 font-bold">Post not found (╥﹏╥)</p>
+                    <p className="flex justify-center font-merriweather text-4xl text-pink-500 font-bold">Post not found (╥﹏╥)</p>
                 </div>
             </div>
           <Blinkies />
@@ -41,7 +41,7 @@ export default function BlogPage({ params }: { params: Promise<{ slug: string }>
   }
 
   return (
-    <div className="bg-pink-100 min-h-screen flex justify-center py-10">
+    <div className="bg-sage min-h-screen flex justify-center py-10">
       <div className="bg-white w-full max-w-5xl p-8 rounded-lg shadow-md flex flex-col space-y-1">
         <Gingham />
         <div className="space-y-5">
@@ -56,7 +56,7 @@ export default function BlogPage({ params }: { params: Promise<{ slug: string }>
                     </button>
                 </div>
                 <div className="space-y-2">
-                    <p className="text-4xl font-bold">{post.title}</p>
+                    <p className="text-4xl font-semibold">{post.title}</p>
                     <p className="text-sm text-gray-400">Last updated: {post.date}</p>
                 </div>
                 <div className="space-y-4 text-md leading-relaxed">
@@ -70,7 +70,7 @@ export default function BlogPage({ params }: { params: Promise<{ slug: string }>
                         <ul key={idx} className="list-disc ml-6 space-y-2">
                           {block.items.map((item, i) => (
                             <li key={i}>
-                              {item.highlight ? <span className="text-pink-accent font-semibold">{item.text}</span> : item.text}
+                              {item.highlight ? <span className="text-pink-400 font-bold">{item.text}</span> : item.text}
                               {item.desc && `: ${item.desc}`}
                             </li>
                           ))}

@@ -1,8 +1,8 @@
 export const posts = [
   {
-    slug: "bttai-lab-1",
+    slug: "breakthroughtech-lab-1",
     title: "Break Through Tech AI: Lab 1 Notes",
-    date: "26 May 2025",
+    date: "3 September 2025",
     content: [
       { type: "heading", text: "Overview" },
       { type: "list", items: [
@@ -72,7 +72,7 @@ export const posts = [
         type: "list",
         items: [
           { text: "Example", highlight: true, desc: "Pinterest’s recommendation system; objective: keep users engaged by showing relevant content" },
-          { text: "Label", highlight: true, desc: "whether a user clicks on a Pin" },
+          { text: "Label", highlight: true, desc: "whether a user clicks on a pin" },
           { text: "Features", highlight: true, desc: "topic of the pin, author of the pin, engagement rate" },
           { text: "Type of Problem", highlight: true, desc: "classification (binary outcome: click/no click)" },
           { text: "Other Example", highlight: true, desc: "predicting house prices (regression)" },
@@ -93,9 +93,9 @@ export const posts = [
     ]
   },
   {
-    slug: "bttai-lab-2",
+    slug: "breakthroughtech-lab-2",
     title: "Break Through Tech AI: Lab 2 Notes",
-    date: "2 June 2025",
+    date: "3 September 2025",
     content: [
       { type: "heading", text: "Overview" },
       {
@@ -150,9 +150,9 @@ export const posts = [
     ],
   },
   {
-    slug: "bttai-lab-3",
+    slug: "breakthroughtech-lab-3",
     title: "Break Through Tech AI: Lab 3 Notes",
-    date: "9 June 2025",
+    date: "3 September 2025",
     content: [
       { type: "heading", text: "Overview" },
       {
@@ -222,9 +222,9 @@ export const posts = [
     ]
   },
   {
-    slug: "bttai-lab-4",
+    slug: "breakthroughtech-lab-4",
     title: "Break Through Tech AI: Lab 4 Notes",
-    date: "16 June 2025",
+    date: "3 September 2025",
     content: [
       { type: "heading", text: "Overview" },
       {
@@ -241,8 +241,8 @@ export const posts = [
         ]
       },
 
-      { type: "paragraph", text: "Equation for Logistic Regression:" },
-      { type: "paragraph", text: "z = w^{T} * x + b" },
+      { type: "heading", text: "Equation for Logistic Regression:" },
+      { type: "paragraph", text: "z = w^T ⋅ x + b" },
       { type: "paragraph", text: "σ(z) = 1 / (1 + e^{-z})" },
       { type: "paragraph", text: "σ(z) maps any real value into a probability between 0 and 1." },
 

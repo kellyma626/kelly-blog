@@ -3,7 +3,7 @@ import BlogList from "@/components/BlogList";
 
 export default function Body() {
   return (
-    <div className="border-4 border-pink-200 border-solid bg-white rounded-lg space-x-10 flex">
+    <div className="border-3 border-pink-200 border-solid bg-white rounded-lg space-x-10 flex">
           <div className="flex-1 min-w-0 bg-light-lilac font-vt323 text-brown-pink">
             <div className="flex mt-10 mr-7 ml-7 -mb-1 border-b-2 border-gray-accent">
               <Image

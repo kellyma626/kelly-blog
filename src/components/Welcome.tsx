@@ -5,8 +5,8 @@ import Link from "next/link";
 
 export default function Welcome() {
   return (
-    <div className="border-4 border-pink-200 border-solid bg-light-lilac px-4 pt-5 pb-8 rounded-lg flex flex-col">
-          <p className="font-silkscreen text-6xl text-hot-pink text-center mt-5 -mb-5">
+    <div className="border-3 border-pink-200 border-dotted bg-light-lilac px-4 pt-5 pb-8 rounded-lg flex flex-col">
+          <p className="font-merriweather font-semibold text-6xl text-hot-pink text-center mt-5 -mb-5">
               Welcome to my blog !!
           </p>
           <div className="flex mt-15 px-10">
@@ -33,13 +33,13 @@ export default function Welcome() {
             </div>
             <div className="flex-1">
               <br />
-              <p className="font-vt323 text-pink-accent text-2xl">My personal knowledge library: notes, ideas, lessons, and reflections from all parts of life.</p>
+              <p className="font-vt323 text-brown-pink text-2xl">My personal knowledge library: notes, ideas, lessons, and reflections from all parts of life.</p>
               <br />
-              <Link className="font-vt323 text-pink-accent text-2xl underline underline-offset-2" href={`/blog/${posts[0].slug}`}>
+              <Link className="font-vt323 text-pink-400 text-2xl underline underline-offset-2" href={`/blog/${posts[0].slug}`}>
                 {`>>`} latest-blog
               </Link>
               <br/>
-              <Link className="font-vt323 text-pink-accent text-2xl underline underline-offset-2" href="/experience-projects">
+              <Link className="font-vt323 text-pink-400 text-2xl underline underline-offset-2" href="/experience-projects">
                 {`>>`} experiences-and-projects
               </Link>
             </div>
