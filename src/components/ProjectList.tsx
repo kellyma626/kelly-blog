@@ -17,8 +17,20 @@ export default function ProjectList() {
               className="rounded-lg mr-4"
             />
             <div className="flex flex-col">
-              <p className="text-xl font-semibold">{proj.title}</p>
+              <div className="flex">
+              <p className="text-xl font-semibold mr-2">{proj.title}</p>
+              <Link href={proj.link} target="_blank">
+              <Image
+                src="/visit.jpg"
+                alt="visit"
+                width={20}
+                height={20}
+                className="rounded-lg mt-1"
+              />
+            </Link>
+            </div>
               <p className="text-sm text-gray-500">{proj.techStack} · {proj.date}</p>
+              
             </div>
           </div>
             <ul className="list-disc list-inside">
@@ -26,15 +38,6 @@ export default function ProjectList() {
                 <li className="text-md" key={i}>{b}</li>
               ))}
             </ul>
-            <Link href={proj.link} target="_blank">
-              <Image
-                src="/github-logo.png"
-                alt="github"
-                width={30}
-                height={30}
-                className="rounded-lg"
-              />
-            </Link>
           </div>
       ))}
     </div>
